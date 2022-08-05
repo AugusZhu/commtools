@@ -16,7 +16,7 @@ import sun.misc.BASE64Encoder;
  * @date 2022/8/5 9:54
  */
 @Log4j
-public class AesSecurity {
+public class AESSecurity {
 
     public static String CIPHER_ALGORITHM = "AES";
 

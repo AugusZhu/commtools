@@ -10,13 +10,13 @@ import lombok.extern.log4j.Log4j;
  * @date 2022/8/5 10:53
  */
 @Log4j
-public class MD5SSecurity {
+public class MD5Security {
 
     // 全局数组
     private final static String[] strDigits =
         {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
 
-    public MD5SSecurity() {
+    public MD5Security() {
     }
 
     // 返回形式为数字跟字符串
@@ -78,10 +78,11 @@ public class MD5SSecurity {
     // add by zhuxianfei 20190227 end
 
     public static void main(String[] args) {
-        String res = MD5SSecurity.GetMD5Code("zhuxianfei");
+        String str = "zhuxianfei745152684";
+        String res = MD5Security.GetMD5Code(str);
         log.info("加密信息如下："+res);
 
-        String res1 = MD5SSecurity.doMd5("zhuxianfei");
+        String res1 = MD5Security.doMd5(str);
         log.info("加密信息如下："+res1);
 
 
